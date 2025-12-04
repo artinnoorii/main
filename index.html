@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
  <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>TELE VPN - فیلترشکن نسل جدی��</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&amp;display=swap" rel="stylesheet">
   <script src="/_sdk/element_sdk.js"></script>
@@ -155,12 +155,15 @@
     
     .pricing-title {
       text-align: center;
-      font-family: 'Courier New', monospace;
       color: #FFD166;
       font-size: 1.8rem;
       font-weight: 700;
       margin-bottom: 3rem;
-      letter-spacing: 2px;
+      padding: 1.5rem 2rem;
+      background: rgba(255, 209, 102, 0.1);
+      border: 2px solid #FFD166;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 209, 102, 0.2);
     }
     
     .plans-grid {
@@ -185,46 +188,9 @@
     }
     
     .plan-card.popular {
-      border: none;
+      border: 3px solid #6C63FF;
       position: relative;
       background: #1A1735;
-    }
-    
-    .plan-card.popular::before {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      border-radius: 20px;
-      padding: 4px;
-      background: #6C63FF;
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask-composite: exclude;
-      animation: colorChange 12s ease-in-out infinite;
-    }
-    
-    @keyframes colorChange {
-      0% {
-        background: #6C63FF;
-        box-shadow: 0 0 30px rgba(108, 99, 255, 0.9), 0 0 50px rgba(108, 99, 255, 0.6), inset 0 0 20px rgba(108, 99, 255, 0.4);
-      }
-      25% {
-        background: #00D4AA;
-        box-shadow: 0 0 30px rgba(0, 212, 170, 0.9), 0 0 50px rgba(0, 212, 170, 0.6), inset 0 0 20px rgba(0, 212, 170, 0.4);
-      }
-      50% {
-        background: #FFD166;
-        box-shadow: 0 0 30px rgba(255, 209, 102, 0.9), 0 0 50px rgba(255, 209, 102, 0.6), inset 0 0 20px rgba(255, 209, 102, 0.4);
-      }
-      75% {
-        background: #FF6B9D;
-        box-shadow: 0 0 30px rgba(255, 107, 157, 0.9), 0 0 50px rgba(255, 107, 157, 0.6), inset 0 0 20px rgba(255, 107, 157, 0.4);
-      }
-      100% {
-        background: #6C63FF;
-        box-shadow: 0 0 30px rgba(108, 99, 255, 0.9), 0 0 50px rgba(108, 99, 255, 0.6), inset 0 0 20px rgba(108, 99, 255, 0.4);
-      }
     }
     
     .plan-badge {
@@ -499,9 +465,9 @@
       }
       
       .pricing-title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-bottom: 2rem;
-        letter-spacing: 1px;
+        padding: 1rem 1rem;
       }
       
       .plans-grid {
@@ -647,7 +613,7 @@
     </div>
    </section><!-- Pricing Section -->
    <section class="pricing-section">
-    <h2 class="pricing-title" id="pricing-title">┏━━━━━━━ قیمت‌های امروز ━━━━━━━┓</h2><!-- پلن‌های ۱ ماهه -->
+    <h2 class="pricing-title" id="pricing-title">💰 قیمت‌های امروز 💰</h2><!-- پلن‌های ۱ ماهه -->
     <h3 style="color: #FFD166; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">پلن‌های ۱ ماهه</h3>
     <div class="plans-grid">
      <div class="plan-card popular"><span class="plan-badge">🔥 پرفروش</span>
@@ -710,7 +676,7 @@
        </div><button class="plan-button standard-btn" onclick="openTelegramBot()">انتخاب</button>
       </div>
      </div>
-    </div><!-- پلن‌های ۲ ماهه -->
+    </div><!-- پلن�����های ۲ ماهه -->
     <h3 style="color: #FFD166; font-size: 1.5rem; margin: 3rem 0 1.5rem; text-align: center;">پلن‌های ۲ ماهه</h3>
     <div class="plans-grid">
      <div class="plan-card popular"><span class="plan-badge">💎 مقرون‌به‌صرفه</span>
@@ -904,7 +870,7 @@
     <div class="guarantee-card">
      <p class="guarantee-text" id="guarantee-text">💎 گارانتی: مشکل حل نشد = پول شما برگشت</p>
     </div>
-    <div class="footer-links"><a href="https://t.me/Televpn_bbot?start=start" class="footer-link" id="guide-link" target="_blank" rel="noopener noreferrer" onclick="sendTelegramCommand('/help')">📖 راهنمای استفاده</a> <a href="https://t.me/Televpn_bbot?start=start" class="footer-link" id="support-link" target="_blank" rel="noopener noreferrer" onclick="sendTelegramCommand('/support')">💬 ارتباط با پشتیبانی</a>
+    <div class="footer-links"><a href="https://t.me/Televpn_bbot?start=help" class="footer-link" id="guide-link">📖 راهنمای استفاده</a> <a href="https://t.me/Televpn_bbot?start=support" class="footer-link" id="support-link">💬 ارتباط با پشتیبانی</a>
     </div>
    </footer>
   </div>
@@ -916,9 +882,9 @@
       feature_2: 'پروتکل فوق‌سریع VLess',
       feature_3: 'گارانتی بازگشت وجه',
       feature_4: 'پشتیبانی ۲۴/۷',
-      trial_text: '🧪 تست رایگان: ۲ گیگ | ۲ روز',
+      trial_text: '🧪 تست رایگان: ۲ گیگ - ۲ روز',
       trial_button: 'دریافت رایگان',
-      pricing_title: '┏━━━━━━━ قیمت‌های امروز ━━━━━━━┓',
+      pricing_title: '💰 قیمت‌های امروز 💰',
       guarantee_text: '💎 گارانتی: مشکل حل نشد = پول شما برگشت',
       support_link: 'ارتباط با پشتیبانی',
       guide_link: 'راهنمای استفاده',
@@ -1048,20 +1014,26 @@
     }
 
     function openTelegramBot() {
-      window.open('https://t.me/Televpn_bbot?start=buy', '_blank', 'noopener,noreferrer');
+      const link = 'https://t.me/Televpn_bbot?start=buy';
+      window.location.href = link;
     }
 
     function openTelegramTest() {
-      window.open('https://t.me/Televpn_bbot?start=test', '_blank', 'noopener,noreferrer');
+      const link = 'https://t.me/Televpn_bbot?start=test';
+      window.location.href = link;
     }
 
     function sendTelegramCommand(command) {
+      let link = '';
       if (command === '/help') {
-        window.open('https://t.me/Televpn_bbot?start=help', '_blank', 'noopener,noreferrer');
+        link = 'https://t.me/Televpn_bbot?start=help';
       } else if (command === '/support') {
-        window.open('https://t.me/Televpn_bbot?start=support', '_blank', 'noopener,noreferrer');
+        link = 'https://t.me/Televpn_bbot?start=support';
+      }
+      if (link) {
+        window.location.href = link;
       }
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a8b9687e329b0dc',t:'MTc2NDg1NDI4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a8bdb752713bcb0',t:'MTc2NDg1NzExMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
